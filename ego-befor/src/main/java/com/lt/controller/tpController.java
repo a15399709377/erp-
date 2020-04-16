@@ -16,4 +16,9 @@ public class tpController {
 	public ModelAndView getAll() {
 		return new ModelAndView("index.jsp").addObject("list", service.getAll());
 	}
+	
+	@RequestMapping("/get")
+	public ModelAndView get() {
+		return new ModelAndView();
+	}
 }
